@@ -27,7 +27,7 @@
             return "£" + (baseRate * (1 - discount / 100)).toFixed(0) + " per desk";
         }
 
-        // Locations with updated coordinates and verified links
+        // Locations with verified website links
         var locations = [
             { 
                 coords: [51.515223, -0.127288], 
@@ -44,6 +44,32 @@
                 text: "📍 <b>Cubo</b><br>Ilona Rose House, Manette St, London W1D 4AL<br>💰 £850 per desk<br>"
                       + "🔹 5% Discount: " + calculateDiscountedRate(850, 5) + "<br>"
                       + "🔹 10% Discount: " + calculateDiscountedRate(850, 10) + "<br>🏢 Better Building<br>🔗 <a href='https://cubowork.com/locations/london/' target='_blank'>Official Website</a>"
+            },
+            { 
+                coords: [51.5163, -0.1387], 
+                text: "📍 <b>Fora Eastcastle Street</b><br>16-19 Eastcastle Street, London W1W 8DY<br>"
+                      + "💰 £800 per desk asking<br>"
+                      + "🔹 5% Discount: " + calculateDiscountedRate(800, 5) + "<br>"
+                      + "🔹 10% Discount: " + calculateDiscountedRate(800, 10) + "<br>"
+                      + "✅ Confirmed deal - £786 per desk<br>"
+                      + "👥 x11 person office, 12 month terms<br>"
+                      + "🏢 Good Grade B building<br>🔗 <a href='https://www.foraspace.com/location/fitzrovia-eastcastle-street/' target='_blank'>Official Website</a>"
+            },
+            { 
+                coords: [51.5175, -0.1360], 
+                text: "📍 <b>Fora Berners Street</b><br>22 Berners Street, London W1T 3LP<br>"
+                      + "💰 £1058 per desk asking<br>"
+                      + "🔹 5% Discount: " + calculateDiscountedRate(1058, 5) + "<br>"
+                      + "🔹 10% Discount: " + calculateDiscountedRate(1058, 10) + "<br>"
+                      + "✅ Confirmed deal - £900 per desk<br>"
+                      + "👥 12 person office, 12 month terms<br>"
+                      + "🏢 Excellent Grade A building<br>🔗 <a href='https://www.foraspace.com/location/fitzrovia-berners-street/' target='_blank'>Official Website</a>"
+            },
+            { 
+                coords: [51.512947, -0.126104], 
+                text: "📍 <b>Fora Covent Garden</b><br>5 Upper St Martin's Ln, London WC2H 9EA<br>💰 £750 per desk<br>"
+                      + "🔹 5% Discount: " + calculateDiscountedRate(750, 5) + "<br>"
+                      + "🔹 10% Discount: " + calculateDiscountedRate(750, 10) + "<br>🏢 Comparable Building<br>🔗 <a href='https://www.foraspace.com/location/covent-garden/' target='_blank'>Official Website</a>"
             },
             { 
                 coords: [51.5166, -0.1300], 
