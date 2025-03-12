@@ -35,21 +35,52 @@
             },
             { 
                 coords: [51.5157, -0.1253], 
-                text: "📍 <b>Canvas</b><br>175 High Holborn, London WC1V 7AA<br>💰 £690 per desk<br>🔹 5% Discount: " + calculateDiscountedRate(690, 5) + "<br>🔹 10% Discount: " + calculateDiscountedRate(690, 10) + "<br>🏢 Comparable Building"
+                text: "📍 <b>Canvas</b><br>175 High Holborn, London WC1V 7AA<br>💰 £690 per desk<br>"
+                      + "🔹 5% Discount: " + calculateDiscountedRate(690, 5) + "<br>"
+                      + "🔹 10% Discount: " + calculateDiscountedRate(690, 10) + "<br>🏢 Comparable Building"
             },
             { 
                 coords: [51.514500, -0.130800], 
-                text: "📍 <b>Cubo</b><br>Ilona Rose House, Manette St, London W1D 4AL<br>💰 £850 per desk<br>🔹 5% Discount: " + calculateDiscountedRate(850, 5) + "<br>🔹 10% Discount: " + calculateDiscountedRate(850, 10) + "<br>🏢 Better Building"
+                text: "📍 <b>Cubo</b><br>Ilona Rose House, Manette St, London W1D 4AL<br>💰 £850 per desk<br>"
+                      + "🔹 5% Discount: " + calculateDiscountedRate(850, 5) + "<br>"
+                      + "🔹 10% Discount: " + calculateDiscountedRate(850, 10) + "<br>🏢 Better Building"
             },
             { 
                 coords: [51.512947, -0.126104], 
-                text: "📍 <b>Fora Covent Garden</b><br>5 Upper St Martin's Ln, London WC2H 9EA<br>💰 £750 per desk<br>🔹 5% Discount: " + calculateDiscountedRate(750, 5) + "<br>🔹 10% Discount: " + calculateDiscountedRate(750, 10) + "<br>🏢 Comparable Building"
+                text: "📍 <b>Fora Covent Garden</b><br>5 Upper St Martin's Ln, London WC2H 9EA<br>💰 £750 per desk<br>"
+                      + "🔹 5% Discount: " + calculateDiscountedRate(750, 5) + "<br>"
+                      + "🔹 10% Discount: " + calculateDiscountedRate(750, 10) + "<br>🏢 Comparable Building"
+            },
+            { 
+                coords: [51.5163, -0.1387], 
+                text: "📍 <b>Fora Eastcastle Street</b><br>16-19 Eastcastle Street, London W1W 8DY<br>"
+                      + "💰 £800 per desk asking<br>"
+                      + "🔹 5% Discount: " + calculateDiscountedRate(800, 5) + "<br>"
+                      + "🔹 10% Discount: " + calculateDiscountedRate(800, 10) + "<br>"
+                      + "✅ Confirmed deal - £786 per desk<br>"
+                      + "👥 x11 person office, 12 month terms<br>"
+                      + "🏢 Good Grade B building"
+            },
+            { 
+                coords: [51.5175, -0.1360], 
+                text: "📍 <b>Fora Berners Street</b><br>22 Berners Street, London W1T 3LP<br>"
+                      + "💰 £1058 per desk asking<br>"
+                      + "🔹 5% Discount: " + calculateDiscountedRate(1058, 5) + "<br>"
+                      + "🔹 10% Discount: " + calculateDiscountedRate(1058, 10) + "<br>"
+                      + "✅ Confirmed deal - £900 per desk<br>"
+                      + "👥 12 person office, 12 month terms<br>"
+                      + "🏢 Excellent Grade A building"
+            },
+            { 
+                coords: [51.5191, -0.1326], 
+                text: "📍 <b>Corinthian</b><br>279 Tottenham Ct Rd, London W1T 7RJ"
             }
         ];
 
+        // Add all markers to the map
         locations.forEach(function(location) {
             L.marker(location.coords).addTo(map)
-                .bindPopup(location.text, { autoClose: true }); // Prevents auto-unfurling of popups
+                .bindPopup(location.text, { autoClose: true }); // Popups only open on click
         });
     </script>
 
